@@ -18,7 +18,7 @@ table, th, td {
         <th>DRIVER NAME</th>
         <th>DRIVER ID</th>
     </tr>
-    <tr th:each="driver: ${getDriver}">
+    <tr th:each="driver: ${drivers}">
         <td th:text="${driver.name}"></td>
         <td th:text="${driver.id}"></td>
     </tr>
