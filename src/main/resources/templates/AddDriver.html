@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Driver Registration</title>
+</head>
+<body>
+<div align="center">
+  <h1>Driver Registration</h1>
+  <form action="#" th:action="@{/save}" method="post" th:object="${driver}">
+
+    <label>DRIVER NAME:</label>
+    <input type="text" th:field="*{name}" /><br/>
+
+    <label>DRIVER ID:</label>
+    <input type="text" th:field="*{id}" /><br/>
+
+    <br/>
+
+    <button type="submit">Register Driver</button>
+
+  </form>
+</div>
+</body>
+</html>
